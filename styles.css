@@ -1,15 +1,15 @@
 /* ==========================================================================
    BREWISTA COFFEE HOUSE - STYLESHEET
-   100% Full-Bleed Hero Canvas Background Architecture (Target Reference Match)
+   Exact 1:1 Match to Target Screenshot Mockup
    ========================================================================== */
 
 :root {
-  --bg-main: #F6F0E7;
+  --bg-main: #F7EFE5;
   --bg-card: #FFFFFF;
   
   --primary-olive: #2B3E2A;
   --primary-olive-hover: #1E2D1D;
-  --accent-sage: #BAC5A9;
+  --accent-sage: #B9C4A6;
   --accent-sage-light: #E2E8D8;
 
   --accent-gold: #D4B584;
@@ -258,19 +258,19 @@ img {
 }
 
 /* ==========================================================================
-   HERO SECTION - FULL-BLEED CANVAS BACKGROUND ARCHITECTURE
+   HERO SECTION - 1:1 TARGET MATCH TO MOCKUP SCREENSHOT
    ========================================================================== */
 .hero-section {
   position: relative;
   width: 100%;
-  padding-top: 130px;
-  padding-bottom: 20px;
+  padding-top: 140px;
+  padding-bottom: 40px;
   overflow: hidden;
   background-color: var(--bg-main);
-  min-height: 620px;
+  min-height: 700px;
 }
 
-/* Full-Bleed Artwork Layer (Spans 100% of entire hero width & height) */
+/* Full-Bleed Artwork Layer */
 .hero-bg-canvas {
   position: absolute;
   inset: 0;
@@ -283,8 +283,8 @@ img {
 .hero-bg-artwork {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: center center;
+  object-fit: cover;
+  object-position: right center;
   mix-blend-mode: multiply;
   filter: contrast(1.02);
 }
@@ -298,7 +298,7 @@ img {
   height: 180px;
   background: var(--accent-sage);
   border-radius: 0 0 0 100%;
-  opacity: 0.8;
+  opacity: 0.85;
   pointer-events: none;
   z-index: 2;
 }
@@ -307,18 +307,18 @@ img {
   position: absolute;
   bottom: 0;
   left: -80px;
-  width: 320px;
+  width: 340px;
   height: 340px;
   background: var(--accent-sage);
   border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
-  opacity: 0.5;
+  opacity: 0.6;
   pointer-events: none;
   z-index: 2;
 }
 
 .dot-grid {
   position: absolute;
-  top: 120px;
+  top: 130px;
   left: 36px;
   display: grid;
   grid-template-columns: repeat(4, 5px);
@@ -328,7 +328,14 @@ img {
   z-index: 3;
 }
 
-/* Hero Content Layer (HTML Text sitting over left empty cream space of canvas) */
+.dot-grid span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--text-muted);
+}
+
+/* Hero Content Layer */
 .hero-content-layer {
   position: relative;
   z-index: 5;
@@ -337,14 +344,14 @@ img {
 }
 
 .hero-text-block {
-  max-width: 480px;
+  max-width: 500px;
 }
 
 .hero-title {
   font-family: var(--font-serif);
-  font-size: 4.25rem;
+  font-size: 4.5rem;
   font-weight: 700;
-  line-height: 1.06;
+  line-height: 1.08;
   letter-spacing: -0.02em;
   color: var(--text-dark);
   margin-bottom: 24px;
@@ -456,7 +463,7 @@ img {
 .highlights-card-container {
   position: relative;
   z-index: 10;
-  margin-top: -10px;
+  margin-top: -30px;
 }
 
 .highlights-floating-box {
@@ -1250,10 +1257,6 @@ img {
 
 /* Responsive Breakpoints */
 @media (max-width: 1024px) {
-  .hero-bg-artwork {
-    opacity: 0.75;
-  }
-
   .hero-content-layer {
     padding-top: 20px;
   }
