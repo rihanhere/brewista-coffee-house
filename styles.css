@@ -540,8 +540,9 @@ img {
    ========================================================================== */
 .highlights-card-container {
   position: relative;
-  z-index: 10;
-  margin-top: -30px;
+  z-index: 20;
+  margin-top: -60px;
+  margin-bottom: 20px;
 }
 
 .highlights-floating-box {
@@ -622,10 +623,10 @@ img {
 }
 
 /* ==========================================================================
-   DOUBLE-BEZEL PRODUCT CARDS & SECTIONS
+   PRODUCT CARDS & SECTIONS
    ========================================================================== */
 .signature-section {
-  padding: 120px 0;
+  padding: 60px 0 100px 0;
 }
 
 .signature-grid {
@@ -692,23 +693,15 @@ img {
   justify-content: center;
 }
 
-/* Double-Bezel Product Card Shell */
 .product-card {
-  background: rgba(43, 62, 42, 0.04);
-  border-radius: 32px;
-  padding: 6px;
-  border: 1px solid var(--border-card);
-  transition: var(--transition-normal);
-}
-
-.product-card-inner {
   background: var(--bg-card);
-  border-radius: 26px;
+  border-radius: 28px;
   padding: 16px;
-  height: 100%;
+  border: 1px solid var(--border-card);
+  box-shadow: 0 4px 14px rgba(43, 62, 42, 0.04);
   display: flex;
   flex-direction: column;
-  box-shadow: inset 0 1px 1px rgba(255,255,255,0.9);
+  transition: var(--transition-normal);
 }
 
 .product-card:hover {
