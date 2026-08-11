@@ -1445,21 +1445,30 @@ img {
 }
 
 @media (max-width: 768px) {
+  .site-container {
+    padding: 0 16px;
+  }
+
+  .floating-navbar {
+    top: 12px;
+  }
+
   .navbar-card {
-    padding: 12px 20px;
+    padding: 10px 16px;
   }
 
   .nav-links {
     display: none;
     position: absolute;
-    top: 80px;
-    left: 20px;
-    right: 20px;
+    top: 70px;
+    left: 16px;
+    right: 16px;
     flex-direction: column;
-    background: var(--bg-card);
-    padding: 24px;
-    border-radius: 24px;
-    box-shadow: var(--shadow-card);
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 12px 32px rgba(43, 62, 42, 0.12);
+    border: 1px solid rgba(43, 62, 42, 0.08);
   }
 
   .nav-links.active {
@@ -1470,23 +1479,107 @@ img {
     display: flex;
   }
 
+  .hero-section {
+    padding-top: 110px;
+    padding-bottom: 10px;
+    min-height: auto;
+  }
+
   .hero-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    line-height: 1.12;
+    margin-bottom: 16px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 24px;
+  }
+
+  .hero-btns-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .hero-btns-row .btn-primary,
+  .hero-btns-row .btn-outline {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .highlights-card-container {
+    margin-top: -20px;
+    margin-bottom: 8px;
   }
 
   .highlights-inner-core {
     grid-template-columns: 1fr;
+    padding: 24px 20px;
+    gap: 20px;
+  }
+
+  .signature-card-box {
+    padding: 16px;
+    border-radius: 24px;
   }
 
   .signature-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .signature-banner-card {
+    padding: 28px 20px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .banner-subtitle {
+    max-width: 100%;
+  }
+
+  .why-us-grid {
+    gap: 32px;
+  }
+
+  .section-heading {
+    font-size: 2.25rem;
   }
 
   .why-us-right {
     grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .club-card {
+    padding: 28px 20px;
+    gap: 24px;
+    border-radius: 28px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .subscribe-btn {
+    width: 100%;
+    text-align: center;
   }
 
   .footer-grid {
     grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2.15rem;
+  }
+
+  .section-heading {
+    font-size: 1.85rem;
   }
 }
