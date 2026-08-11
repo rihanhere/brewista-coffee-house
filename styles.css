@@ -287,6 +287,8 @@ img {
   object-position: right center;
   mix-blend-mode: multiply;
   filter: contrast(1.02);
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
 /* Sage Blobs & Decor */
