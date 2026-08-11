@@ -1403,6 +1403,7 @@ img {
 
   .hero-subtitle {
     margin: 0 auto 32px auto;
+    max-width: 100%;
   }
 
   .hero-btns-row {
@@ -1446,7 +1447,7 @@ img {
 
 @media (max-width: 768px) {
   .site-container {
-    padding: 0 16px;
+    padding: 0 20px;
   }
 
   .floating-navbar {
@@ -1486,14 +1487,15 @@ img {
   }
 
   .hero-title {
-    font-size: 2.5rem;
-    line-height: 1.12;
+    font-size: 2.75rem;
+    line-height: 1.1;
     margin-bottom: 16px;
   }
 
   .hero-subtitle {
-    font-size: 0.95rem;
+    font-size: 1rem;
     margin-bottom: 24px;
+    max-width: 100%;
   }
 
   .hero-btns-row {
@@ -1514,9 +1516,13 @@ img {
   }
 
   .highlights-inner-core {
-    grid-template-columns: 1fr;
-    padding: 24px 20px;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    padding: 24px 16px;
+    gap: 24px 16px;
+  }
+
+  .feature-desc {
+    max-width: 100%;
   }
 
   .signature-card-box {
@@ -1540,16 +1546,24 @@ img {
   }
 
   .why-us-grid {
-    gap: 32px;
+    gap: 28px;
   }
 
   .section-heading {
-    font-size: 2.25rem;
+    font-size: 2.35rem;
+  }
+
+  .section-subtext {
+    max-width: 100%;
   }
 
   .why-us-right {
-    grid-template-columns: 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px 16px;
+  }
+
+  .why-card-desc {
+    max-width: 100%;
   }
 
   .club-card {
@@ -1569,17 +1583,21 @@ img {
   }
 
   .footer-grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 20px;
   }
 }
 
 @media (max-width: 480px) {
   .hero-title {
-    font-size: 2.15rem;
+    font-size: 2.25rem;
   }
 
   .section-heading {
-    font-size: 1.85rem;
+    font-size: 1.95rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
   }
 }
