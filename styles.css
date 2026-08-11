@@ -79,9 +79,9 @@ img {
 }
 
 .site-container {
-  max-width: 1240px;
+  max-width: 1360px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 32px;
 }
 
 /* ==========================================================================
@@ -167,26 +167,30 @@ img {
 }
 
 /* ==========================================================================
-   FLOATING WHITE NAVBAR CARD
+   HEADER & FLOATING NAVBAR CARD (DOPPELRAND)
    ========================================================================== */
-.navbar-wrapper {
-  position: absolute;
-  top: 0;
+.site-header {
+  position: fixed;
+  top: 24px;
   left: 0;
-  right: 0;
+  width: 100%;
   z-index: 100;
-  padding: 24px 0;
+  pointer-events: none;
 }
 
 .navbar-card {
-  background: var(--bg-card);
-  border-radius: 24px;
-  padding: 12px 32px;
+  pointer-events: auto;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 100px;
+  padding: 10px 14px 10px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border: 1px solid var(--border-light);
   box-shadow: var(--shadow-nav);
-  border: 1px solid var(--border-card);
+  transition: var(--transition-normal);
 }
 
 .brand-logo {
@@ -542,7 +546,7 @@ img {
   position: relative;
   z-index: 20;
   margin-top: -60px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .highlights-floating-box {
@@ -626,7 +630,7 @@ img {
    PRODUCT CARDS & SECTIONS (1:1 MOCKUP MATCH)
    ========================================================================== */
 .signature-section {
-  padding: 40px 0 100px 0;
+  padding: 50px 0 70px 0;
 }
 
 .signature-card-box {
@@ -639,7 +643,7 @@ img {
 
 .signature-grid {
   display: grid;
-  grid-template-columns: 1.2fr 1fr 1fr 1fr;
+  grid-template-columns: 1.25fr 1fr 1fr 1fr;
   gap: 20px;
 }
 
@@ -647,7 +651,7 @@ img {
   background: var(--primary-olive);
   color: var(--text-light);
   border-radius: 28px;
-  padding: 40px 32px;
+  padding: 44px 36px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -793,7 +797,7 @@ img {
    WHY CHOOSE US SECTION (EXACT 1:1 ORGANIC LEAF BLOBS MATCH)
    ========================================================================== */
 .why-us-section {
-  padding: 80px 0 120px 0;
+  padding: 70px 0 80px 0;
 }
 
 .why-us-grid {
