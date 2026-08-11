@@ -1,6 +1,6 @@
 /* ==========================================================================
    BREWISTA COFFEE HOUSE - JAVASCRIPT APPLICATION LOGIC
-   Handles Cart State, Side Drawer, Toasts, Filter Tabs & Scroll FX
+   Handles GSAP Animations, Cart State, Side Drawer, Toasts, & Scroll FX
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -27,6 +27,130 @@ document.addEventListener('DOMContentLoaded', () => {
   const newsletterForm = document.getElementById('newsletter-form');
   const mobileToggle = document.getElementById('mobile-toggle');
   const navLinksContainer = document.getElementById('nav-links');
+
+  // --- GSAP ANIMATION ENGINE (LUXURY EXPRESSIVE REVEALS) ---
+  if (window.gsap) {
+    gsap.registerPlugin(ScrollTrigger);
+
+    // 1. Floating Navbar Card Drop-in
+    gsap.from('.navbar-card', {
+      y: -40,
+      opacity: 0,
+      duration: 1.2,
+      ease: 'power3.out'
+    });
+
+    // 2. Hero Section Stagger Timeline
+    const heroTl = gsap.timeline({ defaults: { ease: 'power4.out', duration: 1.2 } });
+
+    heroTl
+      .from('.hero-title', {
+        y: 50,
+        opacity: 0,
+        delay: 0.2
+      })
+      .from('.hero-subtitle', {
+        y: 30,
+        opacity: 0,
+        duration: 1
+      }, '-=0.8')
+      .from('.hero-btns-row .btn-primary-dark, .hero-btns-row .btn-secondary-outline', {
+        y: 24,
+        opacity: 0,
+        stagger: 0.15,
+        duration: 0.8
+      }, '-=0.7')
+      .from('.social-btn', {
+        scale: 0.5,
+        opacity: 0,
+        stagger: 0.08,
+        duration: 0.6,
+        ease: 'back.out(1.7)'
+      }, '-=0.5')
+      .from('.highlights-floating-box', {
+        y: 50,
+        opacity: 0,
+        duration: 1.2,
+        ease: 'power3.out'
+      }, '-=0.9');
+
+    // 3. Hero Background Artwork Organic Floating Loop
+    gsap.to('.hero-bg-artwork', {
+      y: -10,
+      duration: 4.5,
+      repeat: -1,
+      yoyo: true,
+      ease: 'sine.inOut'
+    });
+
+    // 4. Sage Organic Blobs Breathing Motion
+    gsap.to('.blob-top-right', {
+      scale: 1.06,
+      rotate: 2,
+      duration: 7,
+      repeat: -1,
+      yoyo: true,
+      ease: 'sine.inOut'
+    });
+
+    gsap.to('.blob-bottom-left', {
+      scale: 1.05,
+      rotate: -2,
+      duration: 8,
+      repeat: -1,
+      yoyo: true,
+      ease: 'sine.inOut'
+    });
+
+    // 5. Signature Products Grid Scroll Reveal
+    gsap.from('.signature-banner-card, .product-card', {
+      scrollTrigger: {
+        trigger: '.signature-section',
+        start: 'top 80%'
+      },
+      y: 50,
+      opacity: 0,
+      stagger: 0.15,
+      duration: 1,
+      ease: 'power3.out'
+    });
+
+    // 6. Why Choose Us Section Scroll Reveal
+    gsap.from('.why-us-left', {
+      scrollTrigger: {
+        trigger: '.why-us-section',
+        start: 'top 80%'
+      },
+      x: -40,
+      opacity: 0,
+      duration: 1,
+      ease: 'power3.out'
+    });
+
+    gsap.from('.why-card', {
+      scrollTrigger: {
+        trigger: '.why-us-section',
+        start: 'top 80%'
+      },
+      y: 40,
+      opacity: 0,
+      stagger: 0.12,
+      duration: 0.9,
+      ease: 'power3.out'
+    });
+
+    // 7. Coffee Club Banner Scroll Reveal
+    gsap.from('.club-card', {
+      scrollTrigger: {
+        trigger: '.club-banner-section',
+        start: 'top 80%'
+      },
+      scale: 0.96,
+      opacity: 0,
+      duration: 1.2,
+      ease: 'power3.out'
+    });
+  }
 
   // --- NAVBAR SCROLL GLASSMORPHISM ---
   window.addEventListener('scroll', () => {
