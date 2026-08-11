@@ -226,86 +226,90 @@
         
         <div class="section-eyebrow">— OUR SIGNATURE</div>
 
-        <div class="signature-grid">
-          <!-- Left Dark Feature Banner Card -->
-          <div class="signature-banner-card">
-            <div class="banner-content">
-              <h2 class="banner-title">Explore Our<br>Coffee Collection</h2>
-              <p class="banner-subtitle">From rich espressos to creamy lattes, find your perfect cup.</p>
-              
-              <a href="#signature" class="btn-light-pill" id="view-full-menu-btn">
-                <span>VIEW FULL MENU</span>
-                <div class="btn-icon-wrapper">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                  </svg>
+        <!-- MAIN SIGNATURE CONTAINER CARD (1:1 Reference Match) -->
+        <div class="signature-card-box">
+          <div class="signature-grid">
+            <!-- Left Dark Feature Banner Card -->
+            <div class="signature-banner-card">
+              <div class="banner-content">
+                <h2 class="banner-title">Explore Our<br>Coffee Collection</h2>
+                <p class="banner-subtitle">From rich espressos to creamy lattes, find your perfect cup.</p>
+                
+                <a href="#signature" class="btn-light-pill" id="view-full-menu-btn">
+                  <span>VIEW FULL MENU</span>
+                  <div class="btn-icon-wrapper">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Product Card 1: Espresso -->
+            <div class="product-card" data-id="1" data-name="Espresso" data-price="2.50" data-img="assets/espresso.jpg">
+              <div class="product-img-wrapper">
+                <img src="assets/espresso.jpg" alt="Rich Espresso Shot" class="product-img">
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Espresso</h3>
+                <p class="product-desc">Bold and intense shot of pure delight.</p>
+                <div class="product-footer">
+                  <span class="product-price">$2.50</span>
+                  <button class="add-to-cart-btn" aria-label="Add Espresso to Order" data-id="1">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                  </button>
                 </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Product Card 1: Espresso -->
-          <div class="product-card" data-id="1" data-name="Espresso" data-price="2.50" data-img="assets/espresso.jpg">
-            <div class="product-img-wrapper">
-              <img src="assets/espresso.jpg" alt="Rich Espresso Shot" class="product-img">
-            </div>
-            <div class="product-info">
-              <h3 class="product-title">Espresso</h3>
-              <p class="product-desc">Bold and intense shot of pure delight.</p>
-              <div class="product-footer">
-                <span class="product-price">$2.50</span>
-                <button class="add-to-cart-btn" aria-label="Add Espresso to Order" data-id="1">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                    <line x1="12" y1="5" x2="12" y2="19"></line>
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                  </svg>
-                </button>
               </div>
             </div>
-          </div>
 
-          <!-- Product Card 2: Cappuccino -->
-          <div class="product-card" data-id="2" data-name="Cappuccino" data-price="3.50" data-img="assets/cappuccino.jpg">
-            <div class="product-img-wrapper">
-              <img src="assets/cappuccino.jpg" alt="Smooth Cappuccino with Foam Art" class="product-img">
-            </div>
-            <div class="product-info">
-              <h3 class="product-title">Cappuccino</h3>
-              <p class="product-desc">Smooth espresso with steamed milk foam.</p>
-              <div class="product-footer">
-                <span class="product-price">$3.50</span>
-                <button class="add-to-cart-btn" aria-label="Add Cappuccino to Order" data-id="2">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                    <line x1="12" y1="5" x2="12" y2="19"></line>
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                  </svg>
-                </button>
+            <!-- Product Card 2: Cappuccino -->
+            <div class="product-card" data-id="2" data-name="Cappuccino" data-price="3.50" data-img="assets/cappuccino.jpg">
+              <div class="product-img-wrapper">
+                <img src="assets/cappuccino.jpg" alt="Smooth Cappuccino with Foam Art" class="product-img">
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Cappuccino</h3>
+                <p class="product-desc">Smooth espresso with steamed milk foam.</p>
+                <div class="product-footer">
+                  <span class="product-price">$3.50</span>
+                  <button class="add-to-cart-btn" aria-label="Add Cappuccino to Order" data-id="2">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- Product Card 3: Iced Latte -->
-          <div class="product-card" data-id="3" data-name="Iced Latte" data-price="3.75" data-img="assets/iced_latte.jpg">
-            <div class="product-img-wrapper">
-              <img src="assets/iced_latte.jpg" alt="Chilled Iced Latte" class="product-img">
-            </div>
-            <div class="product-info">
-              <h3 class="product-title">Iced Latte</h3>
-              <p class="product-desc">Chilled espresso with milk over ice.</p>
-              <div class="product-footer">
-                <span class="product-price">$3.75</span>
-                <button class="add-to-cart-btn" aria-label="Add Iced Latte to Order" data-id="3">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                    <line x1="12" y1="5" x2="12" y2="19"></line>
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                  </svg>
-                </button>
+            <!-- Product Card 3: Iced Latte -->
+            <div class="product-card" data-id="3" data-name="Iced Latte" data-price="3.75" data-img="assets/iced_latte.jpg">
+              <div class="product-img-wrapper">
+                <img src="assets/iced_latte.jpg" alt="Chilled Iced Latte" class="product-img">
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Iced Latte</h3>
+                <p class="product-desc">Chilled espresso with milk over ice.</p>
+                <div class="product-footer">
+                  <span class="product-price">$3.75</span>
+                  <button class="add-to-cart-btn" aria-label="Add Iced Latte to Order" data-id="3">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
 
+          </div>
         </div>
+
       </div>
     </section>
 

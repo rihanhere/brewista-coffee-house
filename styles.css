@@ -625,27 +625,37 @@ img {
 /* ==========================================================================
    PRODUCT CARDS & SECTIONS
    ========================================================================== */
+/* ==========================================================================
+   PRODUCT CARDS & SECTIONS (1:1 MOCKUP MATCH)
+   ========================================================================== */
 .signature-section {
-  padding: 60px 0 100px 0;
+  padding: 40px 0 100px 0;
+}
+
+.signature-card-box {
+  background: var(--bg-card);
+  border-radius: 36px;
+  padding: 24px;
+  box-shadow: 0 12px 36px rgba(43, 62, 42, 0.05);
+  border: 1px solid var(--border-card);
 }
 
 .signature-grid {
   display: grid;
   grid-template-columns: 1.2fr 1fr 1fr 1fr;
-  gap: 24px;
+  gap: 20px;
 }
 
 .signature-banner-card {
   background: var(--primary-olive);
   color: var(--text-light);
   border-radius: 28px;
-  padding: 40px;
+  padding: 40px 32px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
   overflow: hidden;
-  box-shadow: var(--shadow-card);
 }
 
 .banner-title {
@@ -654,13 +664,15 @@ img {
   font-weight: 700;
   line-height: 1.15;
   margin-bottom: 16px;
+  color: #FFFFFF;
 }
 
 .banner-subtitle {
   font-size: 0.9375rem;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.85);
   margin-bottom: 32px;
   max-width: 260px;
+  line-height: 1.45;
 }
 
 .btn-light-pill {
@@ -694,26 +706,26 @@ img {
 }
 
 .product-card {
-  background: var(--bg-card);
-  border-radius: 28px;
+  background: #FFFFFF;
+  border-radius: 24px;
   padding: 16px;
-  border: 1px solid var(--border-card);
-  box-shadow: 0 4px 14px rgba(43, 62, 42, 0.04);
+  border: 1px solid rgba(43, 62, 42, 0.08);
+  box-shadow: 0 4px 16px rgba(43, 62, 42, 0.04);
   display: flex;
   flex-direction: column;
-  transition: var(--transition-normal);
+  transition: transform 0.3s var(--ease-spring), box-shadow 0.3s ease;
 }
 
 .product-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-hover);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(43, 62, 42, 0.1);
 }
 
 .product-img-wrapper {
-  border-radius: 20px;
+  border-radius: 18px;
   overflow: hidden;
   aspect-ratio: 1 / 1;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .product-img {
@@ -724,7 +736,7 @@ img {
 }
 
 .product-card:hover .product-img {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 
 .product-info {
@@ -763,8 +775,8 @@ img {
 }
 
 .add-to-cart-btn {
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
   background: var(--primary-olive);
   color: var(--text-light);
@@ -780,6 +792,9 @@ img {
   transform: scale(1.12);
 }
 
+/* ==========================================================================
+   WHY CHOOSE US SECTION (1:1 MOCKUP MATCH WITH SOFT SAGE BUBBLE CARDS)
+   ========================================================================== */
 .why-us-section {
   padding: 80px 0 120px 0;
 }
@@ -814,45 +829,44 @@ img {
 }
 
 .why-card {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(12px);
-  border: 1px solid var(--border-light);
-  border-radius: 24px;
-  padding: 28px 20px;
+  background: #E8EDE0;
+  border: 1px solid rgba(43, 62, 42, 0.06);
+  border-radius: 28px;
+  padding: 32px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  transition: var(--transition-fast);
+  transition: transform 0.3s var(--ease-spring), background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .why-card:hover {
-  background: var(--bg-card);
+  background: #DFE6D5;
   transform: translateY(-6px);
-  box-shadow: var(--shadow-card);
+  box-shadow: 0 12px 28px rgba(43, 62, 42, 0.08);
 }
 
 .why-icon-bubble {
-  width: 56px;
-  height: 56px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  background: var(--accent-sage-light);
+  background: rgba(255, 255, 255, 0.85);
   color: var(--primary-olive);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .why-card-title {
-  font-size: 0.9375rem;
+  font-size: 1rem;
   font-weight: 700;
   color: var(--text-dark);
   margin-bottom: 8px;
 }
 
 .why-card-desc {
-  font-size: 0.775rem;
+  font-size: 0.8125rem;
   color: var(--text-muted);
   line-height: 1.45;
 }

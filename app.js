@@ -143,40 +143,43 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 5. Signature Products Grid Scroll Reveal
-    gsap.from('.signature-banner-card, .product-card', {
+    gsap.from('.signature-card-box, .product-card', {
       scrollTrigger: {
         trigger: '.signature-section',
-        start: 'top 80%'
+        start: 'top 85%'
       },
-      y: 50,
+      y: 40,
       opacity: 0,
-      stagger: 0.15,
-      duration: 1,
-      ease: 'power3.out'
+      stagger: 0.12,
+      duration: 0.9,
+      ease: 'power3.out',
+      clearProps: 'all'
     });
 
     // 6. Why Choose Us Section Scroll Reveal
     gsap.from('.why-us-left', {
       scrollTrigger: {
         trigger: '.why-us-section',
-        start: 'top 80%'
+        start: 'top 85%'
       },
-      x: -40,
+      x: -30,
       opacity: 0,
-      duration: 1,
-      ease: 'power3.out'
+      duration: 0.9,
+      ease: 'power3.out',
+      clearProps: 'all'
     });
 
     gsap.from('.why-card', {
       scrollTrigger: {
         trigger: '.why-us-section',
-        start: 'top 80%'
+        start: 'top 85%'
       },
-      y: 40,
+      y: 30,
       opacity: 0,
-      stagger: 0.12,
-      duration: 0.9,
-      ease: 'power3.out'
+      stagger: 0.1,
+      duration: 0.8,
+      ease: 'power3.out',
+      clearProps: 'all'
     });
 
     // 7. Coffee Club Banner Scroll Reveal
