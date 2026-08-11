@@ -14,7 +14,12 @@
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+  <!-- Fixed Tactile Paper Grain Overlay -->
+  <div class="paper-grain-overlay"></div>
+
+  <!-- Awwwards-Tier Custom Magnetic Follower Cursor -->
+  <div class="custom-cursor" id="custom-cursor"></div>
+  <div class="custom-cursor-follower" id="custom-cursor-follower"></div>
 
   <!-- Toast Notification Container -->
   <div id="toast-container" class="toast-container"></div>
@@ -144,71 +149,73 @@
         </div>
       </div>
 
-      <!-- FLOATING 4-COLUMN HIGHLIGHTS CARD AT BOTTOM OF HERO -->
+      <!-- FLOATING 4-COLUMN HIGHLIGHTS CARD AT BOTTOM OF HERO (DOUBLE-BEZEL DOPPELRAND) -->
       <div class="site-container highlights-card-container">
         <div class="highlights-floating-box">
+          <div class="highlights-inner-core">
           
-          <div class="feature-col">
-            <div class="feature-icon-circle">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
-                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
-                <line x1="6" y1="1" x2="6" y2="4"/>
-                <line x1="10" y1="1" x2="10" y2="4"/>
-                <line x1="14" y1="1" x2="14" y2="4"/>
+            <div class="feature-col">
+              <div class="feature-icon-circle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+                  <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+                  <line x1="6" y1="1" x2="6" y2="4"/>
+                  <line x1="10" y1="1" x2="10" y2="4"/>
+                  <line x1="14" y1="1" x2="14" y2="4"/>
+                </svg>
+              </div>
+              <h3 class="feature-title">Quality Coffee</h3>
+              <p class="feature-desc">We source the finest beans from around the world.</p>
+            </div>
+
+            <div class="dotted-divider"></div>
+
+            <div class="feature-col">
+              <div class="feature-icon-circle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                </svg>
+              </div>
+              <h3 class="feature-title">Expertly Brewed</h3>
+              <p class="feature-desc">Perfectly brewed by our skilled baristas.</p>
+            </div>
+
+            <div class="dotted-divider"></div>
+
+            <div class="feature-col">
+              <div class="feature-icon-circle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                </svg>
+              </div>
+              <h3 class="feature-title">Made with Love</h3>
+              <p class="feature-desc">Every cup is made with passion and care.</p>
+            </div>
+
+            <div class="dotted-divider"></div>
+
+            <div class="feature-col">
+              <div class="feature-icon-circle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <rect x="5" y="2" width="14" height="20" rx="3"/>
+                  <line x1="9" y1="18" x2="15" y2="18"/>
+                </svg>
+              </div>
+              <h3 class="feature-title">Fast & Friendly</h3>
+              <p class="feature-desc">Quick service with a smile, every time.</p>
+            </div>
+
+            <!-- Line Art Leaf Branch Decorative Overlay -->
+            <div class="leaf-branch-decor">
+              <svg width="40" height="60" viewBox="0 0 40 60" fill="none" stroke="#2B3E2A" stroke-width="1.2">
+                <path d="M20 55C20 55 35 38 35 22C35 11 27 3 20 3C13 3 5 11 5 22C5 38 20 55 20 55Z" opacity="0.3"/>
+                <path d="M20 55V18" opacity="0.35"/>
+                <path d="M20 30C25 25 30 25 30 25" opacity="0.3"/>
+                <path d="M20 40C14 35 10 35 10 35" opacity="0.3"/>
               </svg>
             </div>
-            <h3 class="feature-title">Quality Coffee</h3>
-            <p class="feature-desc">We source the finest beans from around the world.</p>
+
           </div>
-
-          <div class="dotted-divider"></div>
-
-          <div class="feature-col">
-            <div class="feature-icon-circle">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
-              </svg>
-            </div>
-            <h3 class="feature-title">Expertly Brewed</h3>
-            <p class="feature-desc">Perfectly brewed by our skilled baristas.</p>
-          </div>
-
-          <div class="dotted-divider"></div>
-
-          <div class="feature-col">
-            <div class="feature-icon-circle">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-              </svg>
-            </div>
-            <h3 class="feature-title">Made with Love</h3>
-            <p class="feature-desc">Every cup is made with passion and care.</p>
-          </div>
-
-          <div class="dotted-divider"></div>
-
-          <div class="feature-col">
-            <div class="feature-icon-circle">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <rect x="5" y="2" width="14" height="20" rx="3"/>
-                <line x1="9" y1="18" x2="15" y2="18"/>
-              </svg>
-            </div>
-            <h3 class="feature-title">Fast & Friendly</h3>
-            <p class="feature-desc">Quick service with a smile, every time.</p>
-          </div>
-
-          <!-- Line Art Leaf Branch Decorative Overlay -->
-          <div class="leaf-branch-decor">
-            <svg width="40" height="60" viewBox="0 0 40 60" fill="none" stroke="#2B3E2A" stroke-width="1.2">
-              <path d="M20 55C20 55 35 38 35 22C35 11 27 3 20 3C13 3 5 11 5 22C5 38 20 55 20 55Z" opacity="0.3"/>
-              <path d="M20 55V18" opacity="0.35"/>
-              <path d="M20 30C25 25 30 25 30 25" opacity="0.3"/>
-              <path d="M20 40C14 35 10 35 10 35" opacity="0.3"/>
-            </svg>
-          </div>
-
         </div>
       </div>
 

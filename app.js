@@ -1,6 +1,6 @@
 /* ==========================================================================
    BREWISTA COFFEE HOUSE - JAVASCRIPT APPLICATION LOGIC
-   Handles GSAP Animations, Cart State, Side Drawer, Toasts, & Scroll FX
+   Handles GSAP Animations, Custom Cursor, Cart State, Drawer & Toasts
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -27,6 +27,46 @@ document.addEventListener('DOMContentLoaded', () => {
   const newsletterForm = document.getElementById('newsletter-form');
   const mobileToggle = document.getElementById('mobile-toggle');
   const navLinksContainer = document.getElementById('nav-links');
+
+  // --- AWWWARDS-TIER MAGNETIC CURSOR ENGINE ---
+  const cursor = document.getElementById('custom-cursor');
+  const follower = document.getElementById('custom-cursor-follower');
+
+  if (cursor && follower && window.innerWidth > 1024) {
+    let mouseX = 0, mouseY = 0;
+    let followerX = 0, followerY = 0;
+
+    document.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+
+      cursor.style.left = `${mouseX}px`;
+      cursor.style.top = `${mouseY}px`;
+    });
+
+    function animateCursor() {
+      followerX += (mouseX - followerX) * 0.15;
+      followerY += (mouseY - followerY) * 0.15;
+
+      follower.style.left = `${followerX}px`;
+      follower.style.top = `${followerY}px`;
+
+      requestAnimationFrame(animateCursor);
+    }
+    animateCursor();
+
+    const hoverTargets = document.querySelectorAll('a, button, .product-card, .feature-col, .why-card, .social-btn');
+    hoverTargets.forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursor.classList.add('hover');
+        follower.classList.add('hover');
+      });
+      el.addEventListener('mouseleave', () => {
+        cursor.classList.remove('hover');
+        follower.classList.remove('hover');
+      });
+    });
+  }
 
   // --- GSAP ANIMATION ENGINE (LUXURY EXPRESSIVE REVEALS) ---
   if (window.gsap) {
