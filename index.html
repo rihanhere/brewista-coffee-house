@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brewista Coffee House | Handcrafted Premium Coffee</title>
+  <meta name="description" content="Handcrafted coffee made from premium beans, perfectly brewed for you. Experience artisanal espresso, cappuccinos, and fresh pastries.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- FLOATING WHITE NAVBAR CARD -->
+  <header class="navbar-wrapper" id="navbar">
+    <div class="navbar-card site-container">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="brand-logo">
+        <div class="logo-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M12 2C6.5 2 2 6.5 2 12c0 3.5 1.8 6.6 4.5 8.4V22l3.3-1.5c.7.2 1.4.3 2.2.3 5.5 0 10-4.5 10-10S17.5 2 12 2z" opacity="0.3"/>
+            <path d="M12 4a8 8 0 1 0 8 8c0-4.4-3.6-8-8-8zm0 12c-2.2 0-4-1.8-4-4 0-1.5 1.5-3.5 4-6 2.5 2.5 4 4.5 4 6 0 2.2-1.8 4-4 4z"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="brand-name">Brewista</span>
+          <span class="brand-sub">COFFEE HOUSE</span>
+        </div>
+      </a>
+
+      <!-- Center Nav Links -->
+      <nav class="nav-links" id="nav-links">
+        <a href="#hero" class="nav-link active">
+          <span>HOME</span>
+          <div class="active-indicator"></div>
+        </a>
+        <a href="#about" class="nav-link">ABOUT US</a>
+        <a href="#signature" class="nav-link">MENU</a>
+        <a href="#why-us" class="nav-link">SPECIALS</a>
+        <a href="#club" class="nav-link">GALLERY</a>
+        <a href="#footer" class="nav-link">CONTACT</a>
+      </nav>
+
+      <!-- Right Action Button -->
+      <div class="nav-actions">
+        <button class="cart-btn-trigger" id="open-cart-btn" aria-label="Open Order Cart">
+          <span>ORDER ONLINE</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"/>
+            <circle cx="20" cy="21" r="1"/>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+          </svg>
+          <span class="cart-count-bubble" id="cart-count">0</span>
+        </button>
+
+        <button class="mobile-menu-btn" id="mobile-toggle" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- HERO SECTION - SINGLE CANVAS ARCHITECTURE -->
+    <section class="hero-section" id="hero">
+      
+      <!-- Hero Background Canvas Layer (Full-Bleed 1920px Outpainted Canvas) -->
+  <div class="hero-bg-canvas">
+    <img src="assets/hero_bg_extended.jpg" alt="Brewista Signature Coffee Canvas" class="hero-bg-artwork">
+  </div>
+
+      <!-- Top Right Sage Shape Blob -->
+      <div class="blob-top-right"></div>
+      
+      <!-- Bottom Left Sage Wavy Blob -->
+      <div class="blob-bottom-left"></div>
+
+      <!-- Top Left Matrix Dot Grid Decorative Element -->
+      <div class="dot-grid">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+      </div>
+
+      <!-- HERO CONTENT OVERLAY (Positioned directly over left of canvas) -->
+      <div class="site-container hero-content-layer">
+        <div class="hero-text-block">
+          <h1 class="hero-title">
+            Good days<br>
+            start with<br>
+            <span class="title-green">great coffee.</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Handcrafted coffee made from premium beans,<br>
+            perfectly brewed for you.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-btns-row">
+            <a href="#signature" class="btn-primary-dark">
+              <span>EXPLORE MENU</span>
+              <div class="arrow-circle">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
+            </a>
+
+            <a href="#about" class="btn-secondary-outline">OUR STORY</a>
+          </div>
+
+          <!-- Social Media Circle Buttons -->
+          <div class="social-icon-row">
+            <a href="#" class="social-btn" aria-label="Instagram">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Facebook">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Twitter">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="WhatsApp">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- FLOATING 4-COLUMN HIGHLIGHTS CARD AT BOTTOM OF HERO -->
+      <div class="site-container highlights-card-container">
+        <div class="highlights-floating-box">
+          
+          <div class="feature-col">
+            <div class="feature-icon-circle">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+                <line x1="6" y1="1" x2="6" y2="4"/>
+                <line x1="10" y1="1" x2="10" y2="4"/>
+                <line x1="14" y1="1" x2="14" y2="4"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Quality Coffee</h3>
+            <p class="feature-desc">We source the finest beans from around the world.</p>
+          </div>
+
+          <div class="dotted-divider"></div>
+
+          <div class="feature-col">
+            <div class="feature-icon-circle">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Expertly Brewed</h3>
+            <p class="feature-desc">Perfectly brewed by our skilled baristas.</p>
+          </div>
+
+          <div class="dotted-divider"></div>
+
+          <div class="feature-col">
+            <div class="feature-icon-circle">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Made with Love</h3>
+            <p class="feature-desc">Every cup is made with passion and care.</p>
+          </div>
+
+          <div class="dotted-divider"></div>
+
+          <div class="feature-col">
+            <div class="feature-icon-circle">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="5" y="2" width="14" height="20" rx="3"/>
+                <line x1="9" y1="18" x2="15" y2="18"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Fast & Friendly</h3>
+            <p class="feature-desc">Quick service with a smile, every time.</p>
+          </div>
+
+          <!-- Line Art Leaf Branch Decorative Overlay -->
+          <div class="leaf-branch-decor">
+            <svg width="40" height="60" viewBox="0 0 40 60" fill="none" stroke="#2B3E2A" stroke-width="1.2">
+              <path d="M20 55C20 55 35 38 35 22C35 11 27 3 20 3C13 3 5 11 5 22C5 38 20 55 20 55Z" opacity="0.3"/>
+              <path d="M20 55V18" opacity="0.35"/>
+              <path d="M20 30C25 25 30 25 30 25" opacity="0.3"/>
+              <path d="M20 40C14 35 10 35 10 35" opacity="0.3"/>
+            </svg>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- SIGNATURE COLLECTION SECTION -->
+    <section class="signature-section" id="signature">
+      <div class="site-container">
+        
+        <div class="section-eyebrow">— OUR SIGNATURE</div>
+
+        <div class="signature-grid">
+          <!-- Left Dark Feature Banner Card -->
+          <div class="signature-banner-card">
+            <div class="banner-content">
+              <h2 class="banner-title">Explore Our<br>Coffee Collection</h2>
+              <p class="banner-subtitle">From rich espressos to creamy lattes, find your perfect cup.</p>
+              
+              <a href="#signature" class="btn-light-pill" id="view-full-menu-btn">
+                <span>VIEW FULL MENU</span>
+                <div class="btn-icon-wrapper">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Product Card 1: Espresso -->
+          <div class="product-card" data-id="1" data-name="Espresso" data-price="2.50" data-img="assets/espresso.jpg">
+            <div class="product-img-wrapper">
+              <img src="assets/espresso.jpg" alt="Rich Espresso Shot" class="product-img">
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Espresso</h3>
+              <p class="product-desc">Bold and intense shot of pure delight.</p>
+              <div class="product-footer">
+                <span class="product-price">$2.50</span>
+                <button class="add-to-cart-btn" aria-label="Add Espresso to Order" data-id="1">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 2: Cappuccino -->
+          <div class="product-card" data-id="2" data-name="Cappuccino" data-price="3.50" data-img="assets/cappuccino.jpg">
+            <div class="product-img-wrapper">
+              <img src="assets/cappuccino.jpg" alt="Smooth Cappuccino with Foam Art" class="product-img">
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Cappuccino</h3>
+              <p class="product-desc">Smooth espresso with steamed milk foam.</p>
+              <div class="product-footer">
+                <span class="product-price">$3.50</span>
+                <button class="add-to-cart-btn" aria-label="Add Cappuccino to Order" data-id="2">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 3: Iced Latte -->
+          <div class="product-card" data-id="3" data-name="Iced Latte" data-price="3.75" data-img="assets/iced_latte.jpg">
+            <div class="product-img-wrapper">
+              <img src="assets/iced_latte.jpg" alt="Chilled Iced Latte" class="product-img">
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Iced Latte</h3>
+              <p class="product-desc">Chilled espresso with milk over ice.</p>
+              <div class="product-footer">
+                <span class="product-price">$3.75</span>
+                <button class="add-to-cart-btn" aria-label="Add Iced Latte to Order" data-id="3">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US SECTION -->
+    <section class="why-us-section" id="why-us">
+      <div class="site-container">
+        
+        <div class="section-eyebrow">— WHY CHOOSE US</div>
+
+        <div class="why-us-grid">
+          
+          <div class="why-us-left">
+            <h2 class="section-heading">More Than<br>Just Coffee</h2>
+            <p class="section-subtext">
+              We're passionate about bringing you the best coffee experience, every single day.
+            </p>
+            <a href="#about" class="btn-primary-dark">
+              <span>LEARN MORE</span>
+              <div class="arrow-circle">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
+            </a>
+          </div>
+
+          <div class="why-us-right">
+            
+            <div class="why-card">
+              <div class="why-icon-bubble">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                  <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                </svg>
+              </div>
+              <h3 class="why-card-title">Ethically Sourced</h3>
+              <p class="why-card-desc">Responsibly sourced beans you can feel good about.</p>
+            </div>
+
+            <div class="why-card">
+              <div class="why-icon-bubble">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <circle cx="12" cy="8" r="7"/>
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+                </svg>
+              </div>
+              <h3 class="why-card-title">Award Winning</h3>
+              <p class="why-card-desc">Recognized for our quality and taste.</p>
+            </div>
+
+            <div class="why-card">
+              <div class="why-icon-bubble">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <rect x="2" y="4" width="20" height="16" rx="2"/>
+                  <path d="M6 8h12"/>
+                  <path d="M6 12h8"/>
+                  <path d="M6 16h4"/>
+                </svg>
+              </div>
+              <h3 class="why-card-title">Modern Equipment</h3>
+              <p class="why-card-desc">State-of-the-art machines for the perfect brew.</p>
+            </div>
+
+            <div class="why-card">
+              <div class="why-icon-bubble">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M12 2a10 10 0 1 0 10 10H12V2z"/>
+                  <path d="M12 12L2.1 12.1"/>
+                </svg>
+              </div>
+              <h3 class="why-card-title">Cozy Ambience</h3>
+              <p class="why-card-desc">A warm and welcoming space to relax.</p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- COFFEE CLUB NEWSLETTER BANNER -->
+    <section class="club-banner-section" id="club">
+      <div class="site-container">
+        
+        <div class="club-card">
+          
+          <div class="club-image-box">
+            <div class="discount-badge">
+              <span class="discount-num">10%</span>
+              <span class="discount-label">OFF</span>
+              <span class="discount-sub">YOUR FIRST<br>ORDER</span>
+            </div>
+            <img src="assets/croissant_breakfast.jpg" alt="Golden Butter Croissants with Coffee" class="club-img">
+          </div>
+
+          <div class="club-content">
+            <div class="club-eyebrow">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              <span>JOIN OUR COFFEE CLUB</span>
+            </div>
+
+            <h2 class="club-title">Get Exclusive Offers<br>& Coffee Tips</h2>
+            <p class="club-subtitle">Sign up for our newsletter and enjoy special deals, new arrivals, and more!</p>
+
+            <form class="newsletter-form" id="newsletter-form">
+              <input type="email" placeholder="Enter your email" class="email-input" required id="newsletter-email">
+              <button type="submit" class="subscribe-btn">SUBSCRIBE</button>
+            </form>
+
+            <p class="form-disclaimer">No spam, unsubscribe anytime.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- WAVY DIVIDER -->
+  <div class="footer-wave-divider">
+    <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 60C240 120 480 0 720 60C960 120 1200 0 1440 60V120H0V60Z" fill="#1C1613"/>
+    </svg>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" id="footer">
+    <div class="site-container footer-grid">
+      
+      <div class="footer-col brand-col">
+        <a href="#" class="brand-logo footer-logo">
+          <div class="logo-icon light">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 4a8 8 0 1 0 8 8c0-4.4-3.6-8-8-8zm0 12c-2.2 0-4-1.8-4-4 0-1.5 1.5-3.5 4-6 2.5 2.5 4 4.5 4 6 0 2.2-1.8 4-4 4z"/>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="brand-name light">Brewista</span>
+            <span class="brand-sub light">COFFEE HOUSE</span>
+          </div>
+        </a>
+        <p class="footer-about-text">
+          Great coffee, good vibes,<br>
+          and a whole lot of passion.<br>
+          Brewed fresh for you.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">QUICK LINKS</h4>
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#signature">Our Menu</a></li>
+          <li><a href="#why-us">Specials</a></li>
+          <li><a href="#club">Gallery</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">HELP & SUPPORT</h4>
+        <ul class="footer-links">
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Shipping & Delivery</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">CONTACT US</h4>
+        <div class="contact-info-list">
+          <div class="contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+1 (555) 123-4567</span>
+          </div>
+          <div class="contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>hello@brewista.com</span>
+          </div>
+          <div class="contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>123 Coffee Street,<br>Brew City, BC 12345</span>
+          </div>
+        </div>
+
+        <div class="footer-socials">
+          <span class="socials-label">FOLLOW US</span>
+          <div class="socials-flex">
+            <a href="#" aria-label="Instagram"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" aria-label="Twitter"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+            <a href="#" aria-label="WhatsApp"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom site-container">
+      <div class="footer-leaf-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+        </svg>
+      </div>
+      <p>© 2024 Brewista Coffee House. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- CART SIDE DRAWER -->
+  <div class="cart-drawer-overlay" id="cart-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer">
+    <div class="drawer-header">
+      <div class="drawer-title-wrap">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="9" cy="21" r="1"/>
+          <circle cx="20" cy="21" r="1"/>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+        </svg>
+        <h3>Your Coffee Order</h3>
+      </div>
+      <button class="close-drawer-btn" id="close-cart-btn" aria-label="Close Cart">✕</button>
+    </div>
+
+    <div class="drawer-body" id="cart-items-container">
+      <div class="empty-cart-state">
+        <div class="empty-icon">☕</div>
+        <p class="empty-title">Your cart is empty</p>
+        <p class="empty-sub">Add some handcrafted coffee to get started!</p>
+      </div>
+    </div>
+
+    <div class="drawer-footer">
+      <div class="price-row">
+        <span>Subtotal</span>
+        <span id="cart-subtotal">$0.00</span>
+      </div>
+      <div class="price-row">
+        <span>Tax (8%)</span>
+        <span id="cart-tax">$0.00</span>
+      </div>
+      <div class="price-row total-row">
+        <span>Total</span>
+        <span id="cart-total">$0.00</span>
+      </div>
+
+      <button class="checkout-btn" id="checkout-btn">
+        <span>PROCEED TO CHECKOUT</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </button>
+    </div>
+  </aside>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
